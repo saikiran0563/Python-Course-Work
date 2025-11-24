@@ -125,6 +125,7 @@ print(names.replace('sh', ''))
 print(names.replace('sh', '00'))
 print(names.replace('sh', '-00-'))
 print(names.replace('Ajay', 'Anirudh'))
+print(names.translate(str.maketrans('aeiou', '*****')))  # Replaces vowels with '*'
 
 # ------------------------------
 # Translation Example (maketrans + translate)
