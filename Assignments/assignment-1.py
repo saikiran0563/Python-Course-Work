@@ -1,5 +1,3 @@
-# Task 1: Collect Product Details
-
 product_id = int(input("Enter Product ID: "))
 product_name = input("Enter Product Name: ")
 price = float(input("Enter Price: "))
@@ -24,8 +22,6 @@ supplier_details = {
     "Contact": supplier_contact,
     "Location": supplier_location
 }
-
-# Task 2: Display Product Details
 
 print("\nProduct ID, Name, Price:", product_id, product_name, price, sep=", ")
 
