@@ -1,35 +1,45 @@
-product_id = int(input("Enter Product ID: "))
-product_name = input("Enter Product Name: ")
-price = float(input("Enter Price: "))
+movie_id = int(input("Enter Movie ID: "))
+movie_title = input("Enter Movie Title: ")
+imdb_rating = float(input("Enter IMDB Rating: "))
+genres = input("Enter Genres (comma-separated): ").split(",")
 
-categories_input = input("Enter Categories (comma-separated): ")
-categories = [cat.strip() for cat in categories_input.split(',') if cat.strip()]
+duration = int(input("Enter Duration (in minutes): "))
+release_year = int(input("Enter Release Year: "))
+box_office = float(input("Enter Box Office Collection (in crores): "))
 
-available_stock = int(input("Enter Available Stock: "))
-sold_stock = int(input("Enter Sold Stock: "))
-stock_details = (available_stock, sold_stock)
+popularity_score = float(input("Enter Popularity Score: "))
 
-discount = float(input("Enter Discount Percentage: "))
+actors = set(input("Enter Lead Actors (comma-separated): ").split(","))
 
-features_input = input("Enter Product Features (comma-separated): ")
-product_features = {feature.strip() for feature in features_input.split(',') if feature.strip()}
+director_name = input("Enter Director Name: ")
+director_contact = input("Enter Director Contact Number: ")
+director_country = input("Enter Director Country: ")
 
-supplier_name = input("Enter Supplier Name: ")
-supplier_contact = input("Enter Supplier Contact Number: ")
-supplier_location = input("Enter Supplier Location: ")
-supplier_details = {
-    "Name": supplier_name,
-    "Contact": supplier_contact,
-    "Location": supplier_location
+director_details = {
+    "name": director_name,
+    "contact": director_contact,
+    "country": director_country
 }
 
-print("\nProduct ID, Name, Price:", product_id, product_name, price, sep=", ")
+print("\n" + "="*50)
+print("NETFLIX MOVIE INFORMATION SUMMARY")
+print("="*50)
 
-print("Product Discount: %.2f%%" % discount)
+print("\n1. Using Comma Separation (sep=',')")
+print("Movie ID, Title, Rating:", movie_id, movie_title, imdb_rating, sep=",")
 
-print(f"Product Name: {product_name}")
-print(f"Price: ₹{price:.2f}")
-print(f"Discount: {discount}%")
-print(f"Stock Available: {stock_details[0]} units")
+print("\n2. Using Percentage Formatting (% operator)")
+print("Popularity Score: %.2f%%" % popularity_score)
 
-print("Supplier Details: Name - {Name}, Contact - {Contact}, Location - {Location}".format(**supplier_details))
+print("\n3. Using f-strings")
+print(f"Movie Title: {movie_title}")
+print(f"IMDB Rating: {imdb_rating}")
+print(f"Duration: {duration} minutes, Release Year: {release_year}")
+print(f"Box Office: ₹{box_office} crores")
+
+print("\n4. Using .format() Method")
+print("Director Details: Name - {}, Contact - {}, Country - {}".format(
+    director_details["name"],
+    director_details["contact"],
+    director_details["country"]
+))

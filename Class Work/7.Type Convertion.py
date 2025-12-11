@@ -36,7 +36,8 @@ print("\n---- Converting from list ----")
 list_d = [1, 2, 3, 4]
 # int(list_d)        # Error
 # float(list_d)      # Error
-print(str(list_d))    # "[1, 2, 3, 4]"
+print(str(list_d))  
+print(int(list_d))  # "[1, 2, 3, 4]"
 print(bool(list_d))   # True
 print(tuple(list_d))  # (1, 2, 3, 4)
 print(set(list_d))    # {1, 2, 3, 4}

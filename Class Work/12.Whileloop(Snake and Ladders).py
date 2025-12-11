@@ -60,7 +60,4 @@ while p1_sc <winning_point and p2_sc <winning_point:
     else:
         print(f'Congrates!!!\n{p1} You win the game')
         break
-
-      
-    
     
