@@ -47,6 +47,16 @@
 # b="world"
 # print(a+b)
 # print(a,b)
-import math
+# import math
 
-print(math.ceil(5.3))
+# print(math.ceil(5.3))
+
+# try:
+#     balance = 3000
+#     withdraw = int(input("Enter amount: "))
+#     if withdraw > balance:
+#         raise Exception("Insufficient balance")
+#     balance -= withdraw
+#     print("Transaction successful")
+# except Exception as e:
+#     print("Error:", e)
