@@ -32,10 +32,13 @@ For application-style projects, see my separate [Task Manager](https://github.co
 - **Functions and problem solving:** reusable functions, lambda expressions, recursion, and generators
 - **Useful built-ins and modules:** map, filter, reduce, Counter, math, and modules
 - **Object-oriented programming:** constructors, inheritance, polymorphism, and abstraction
+- **Exception handling:** handling common runtime errors and validating input
+- **NumPy (studied after exception handling):** numerical arrays, array dimensions and shape, indexing and slicing, vectorized operations, and aggregations
+- **pandas (studied after NumPy):** Series and DataFrames, inspecting tabular data, selecting and filtering rows and columns, sorting, missing-value handling, and summary statistics
 - **Working with data:** basic file and structured-data exercises
 - **Small programs:** movie information, chat-message analysis, a Python interview quiz, games, and everyday calculations
 
-The list describes topics represented in the files; it does not claim that every topic is mastered.
+NumPy and pandas are part of my learning journey, but dedicated example files for these libraries have not yet been added to this repository. This list records study topics; it does not claim that every topic is mastered.
 
 ## How I Practise
 
