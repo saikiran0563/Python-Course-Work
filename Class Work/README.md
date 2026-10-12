@@ -32,6 +32,8 @@ This folder contains numbered examples from the course. Use it as the concept-by
 | [24.polymorphism.py](24.polymorphism.py) | Polymorphism |
 | [25.abstraction.py](25.abstraction.py) | Abstraction |
 | [26.exception.py](26.exception.py) | Exception handling |
+| [27.numpy.py](27.numpy.py) | NumPy arrays, shape, dimensions, indexing, slicing, vectorized operations, and aggregation |
+| [28.pandas.py](28.pandas.py) | pandas Series and DataFrames, CSV data, selection, filtering, sorting, missing values, and group summaries |
 | [test.py](test.py) | Additional class exercise |
 
 ## How to Use These Examples
@@ -46,6 +48,19 @@ This folder contains numbered examples from the course. Use it as the concept-by
 5. Write a similar example without copying the original.
 
 Some scripts are interactive or demonstrate concepts by printing results; they are learning examples, not a packaged application.
+
+## NumPy and pandas lessons
+
+The two data-analysis lessons require third-party libraries. Install them in your active Python environment before running these files:
+
+    python -m pip install numpy pandas
+
+Run them from the repository root:
+
+    python "Class Work/27.numpy.py"
+    python "Class Work/28.pandas.py"
+
+The pandas lesson uses a small sample CSV stored in memory, so it does not require a separate dataset. It also demonstrates how to load a local CSV with `pd.read_csv("data.csv")`.
 
 ## Review Tips
 
