@@ -38,7 +38,7 @@ For application-style projects, see my separate [Task Manager](https://github.co
 - **Working with data:** basic file and structured-data exercises
 - **Small programs:** movie information, chat-message analysis, a Python interview quiz, games, and everyday calculations
 
-NumPy and pandas are part of my learning journey, but dedicated example files for these libraries have not yet been added to this repository. This list records study topics; it does not claim that every topic is mastered.
+Runnable NumPy and pandas examples are available in [27.numpy.py](Class%20Work/27.numpy.py) and [28.pandas.py](Class%20Work/28.pandas.py). Their dependencies can be installed with `python -m pip install numpy pandas`. This list records study topics; it does not claim that every topic is mastered.
 
 ## How I Practise
 
@@ -54,12 +54,14 @@ Use [LEARNING_JOURNEY.md](LEARNING_JOURNEY.md) to record milestones and review w
 
 ## Run an Example
 
-Install Python 3.12 or a compatible newer version. Most basic exercises use only the Python standard library.
+Install Python 3.12 or a compatible newer version. Most basic exercises use only the Python standard library. The NumPy and pandas lessons require additional packages: run `python -m pip install numpy pandas` in your active environment.
 
 From the repository root in PowerShell, quote paths that contain spaces:
 
     python "Class Work/1.Operators in Python.py"
     python "Class Work/17.lambda.py"
+    python "Class Work/27.numpy.py"
+    python "Class Work/28.pandas.py"
     python "practice/3.bmi.py"
     python Assignments/assignment-1.py
 
