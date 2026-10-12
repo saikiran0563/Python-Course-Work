@@ -46,7 +46,7 @@ Self-check: Can I predict which exception will be raised, catch only errors I ex
 
 ## Stage 7 — NumPy and pandas
 
-These data-analysis libraries were studied after exception handling. Use this stage to revise the fundamentals and add small, runnable examples to the repository.
+These data-analysis libraries were studied after exception handling. The numbered class-work examples provide runnable demonstrations of their core concepts.
 
 ### NumPy
 
@@ -67,7 +67,7 @@ These data-analysis libraries were studied after exception handling. Use this st
 
 Self-check: Can I load a small dataset, inspect it, answer a few questions using NumPy or pandas, and explain each operation?
 
-Repository note: Dedicated NumPy and pandas examples are not yet indexed in this repository.
+Repository examples: [27.numpy.py](Class%20Work/27.numpy.py) and [28.pandas.py](Class%20Work/28.pandas.py). Install the dependencies with `python -m pip install numpy pandas` before running either file.
 
 ## Stage 8 — Combine Concepts
 
@@ -110,7 +110,7 @@ Copy and complete this section when recording a milestone:
 
 ## Suggested Next Improvements
 
-1. Add small, runnable NumPy and pandas examples in a dedicated folder.
+1. Add small practice tasks for NumPy and pandas using a second dataset.
 2. Turn reusable calculations into small functions with return values.
 3. Add tests for those functions before testing interactive input and output.
 4. Add input validation for values such as amounts, ages, and menu choices.
