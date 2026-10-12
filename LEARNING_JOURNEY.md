@@ -1,6 +1,6 @@
 # Python Learning Journey
 
-This page turns the repository into a reviewable learning path. It is a suggested order based on the files currently available, not a claim that every concept has been mastered.
+This page turns the repository into a reviewable learning path. It is a suggested order based on the files currently available and the additional topics studied, not a claim that every concept has been mastered.
 
 ## Stage 1 — Fundamentals
 
@@ -36,13 +36,46 @@ Review constructors, instance attributes, inheritance, polymorphism, and abstrac
 
 Self-check: Can I write a small class from scratch and use it without relying on undocumented internal attributes?
 
-## Stage 6 — Combine Concepts
+## Stage 6 — Exception Handling
+
+Study how to handle runtime problems and invalid input with `try`, `except`, `else`, and `finally`. Practise handling expected errors without hiding unrelated bugs.
+
+Repository work: [Exception handling example](Class%20Work/26.exception.py)
+
+Self-check: Can I predict which exception will be raised, catch only errors I expect, and keep a useful message for the user?
+
+## Stage 7 — NumPy and pandas
+
+These data-analysis libraries were studied after exception handling. Use this stage to revise the fundamentals and add small, runnable examples to the repository.
+
+### NumPy
+
+- [ ] Create numerical arrays with `numpy.array()` and common array-creation functions.
+- [ ] Inspect array dimensions, shape, size, and data type.
+- [ ] Use array indexing, slicing, and reshaping.
+- [ ] Perform vectorized arithmetic and comparisons.
+- [ ] Calculate aggregates such as sum, mean, minimum, and maximum, including the use of `axis`.
+
+### pandas
+
+- [ ] Explain the purpose of a `Series` and a `DataFrame`.
+- [ ] Create DataFrames and load tabular data from CSV files.
+- [ ] Inspect data using `head()`, `info()`, `describe()`, and shape/column checks.
+- [ ] Select and filter rows and columns.
+- [ ] Sort data and identify or handle missing values.
+- [ ] Calculate basic descriptive statistics and group summaries.
+
+Self-check: Can I load a small dataset, inspect it, answer a few questions using NumPy or pandas, and explain each operation?
+
+Repository note: Dedicated NumPy and pandas examples are not yet indexed in this repository.
+
+## Stage 8 — Combine Concepts
 
 Attempt the numbered [assignments](Assignments/README.md) and [weekly exercises](Weeklytests/README.md). First solve without copying, then compare with the existing solution and write down what could be improved.
 
 Self-check: Can I break a larger problem into small functions and handle empty input, invalid input, and unexpected values?
 
-## Stage 7 — Build Engineering Habits
+## Stage 9 — Build Engineering Habits
 
 Use Git, meaningful commit messages, readable naming, comments that explain why, syntax checks, and small tests. A useful next step is to extract pure functions from interactive scripts so they can be tested automatically.
 
@@ -56,6 +89,8 @@ Mark a line complete only after you can explain the concept and solve a fresh ex
 - [ ] Write functions with clear inputs and return values.
 - [ ] Explain and use modules, exceptions, and file handling.
 - [ ] Explain constructors, inheritance, and polymorphism with a small example.
+- [ ] Use NumPy arrays and vectorized operations on numerical data.
+- [ ] Use pandas Series and DataFrames to inspect, filter, and summarize tabular data.
 - [ ] Solve the assignments again from a blank file.
 - [ ] Add automated tests for a few reusable functions.
 - [ ] Review mistakes and record how they were fixed.
@@ -75,7 +110,8 @@ Copy and complete this section when recording a milestone:
 
 ## Suggested Next Improvements
 
-1. Turn reusable calculations into small functions with return values.
-2. Add tests for those functions before testing interactive input and output.
-3. Add input validation for values such as amounts, ages, and menu choices.
-4. Refactor duplicated logic only after preserving the original exercise's purpose.
+1. Add small, runnable NumPy and pandas examples in a dedicated folder.
+2. Turn reusable calculations into small functions with return values.
+3. Add tests for those functions before testing interactive input and output.
+4. Add input validation for values such as amounts, ages, and menu choices.
+5. Refactor duplicated logic only after preserving the original exercise's purpose.
